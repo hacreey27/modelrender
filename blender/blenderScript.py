@@ -39,7 +39,7 @@ def render(x: Path):
     obj.select_set(True)
     bpy.ops.view3d.camera_to_view_selected()
     camera = bpy.context.scene.camera
-    camera.data.ortho_scale *= 1.04
+    camera.data.ortho_scale *= 1.44
 
     bpy.context.scene.render.filepath = params["out"]
     bpy.ops.render.render(animation=False, write_still=True)
